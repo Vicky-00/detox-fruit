@@ -14,6 +14,9 @@ export const metadata = {
   title: "Custom Detox Juice & Fruit Water Builder",
   description:
     "Build healthy detox juices and fruit-infused water with real nutrition benefits. Choose fruits based on skin, gut health, immunity, and hydration.",
+  verification: {
+    google: "1OR8aKDlaanHbt4a5urciCujLQ_LYQ25Wt-w2wF2bo4",
+  },
   robots: {
     index: true,
     follow: true,
