@@ -1,4 +1,4 @@
-"use client";
+import BlendingAnimation from "./BlendingAnimation";
 
 interface SuccessModalProps {
     isOpen: boolean;
@@ -29,20 +29,9 @@ export default function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
                     </svg>
                 </button>
 
-                {/* CSS/SVG Juice Illustration */}
-                <div className="relative w-32 h-32 flex items-center justify-center bg-emerald-50 rounded-full">
-                    <svg viewBox="0 0 200 200" className="w-24 h-24 drop-shadow-md" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* Cup */}
-                        <path d="M60 60 L70 160 Q75 180 100 180 T130 160 L140 60 Z" fill="#ecfdf5" stroke="#10b981" strokeWidth="4" />
-                        {/* Liquid */}
-                        <path d="M65 80 L70 160 Q75 180 100 180 T130 160 L135 80 Q100 90 65 80" fill="#34d399" opacity="0.8" />
-                        {/* Straw */}
-                        <path d="M110 100 L140 20" stroke="#f59e0b" strokeWidth="6" strokeLinecap="round" />
-                        {/* Bubbles */}
-                        <circle cx="90" cy="120" r="4" fill="white" opacity="0.6"><animate attributeName="cy" values="120;100" dur="2s" repeatCount="indefinite" /></circle>
-                        <circle cx="110" cy="140" r="3" fill="white" opacity="0.6"><animate attributeName="cy" values="140;110" dur="3s" repeatCount="indefinite" /></circle>
-                    </svg>
-                    <div className="absolute -top-2 -right-2 text-4xl animate-bounce delay-700">✨</div>
+                {/* Animation Container */}
+                <div className="relative w-32 h-32 flex items-center justify-center bg-emerald-50 rounded-full pointer-events-none p-4">
+                    <BlendingAnimation />
                 </div>
 
                 <div className="space-y-2">
