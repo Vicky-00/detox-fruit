@@ -1,0 +1,36 @@
+[
+  {
+    "id": "apple",
+    "name": "Apple",
+    "category": "fruit",
+    "image": "/images/apple.png",
+    "nutrients": {
+      "calories": 52,
+      "vitaminC": "5mg",
+      "fiber": "2.4g"
+    },
+    "benefits": [
+      "Improves digestion",
+      "Supports heart health"
+    ],
+    "canMixWith": ["orange", "guava", "pomegranate"],
+    "notRecommendedWith": ["banana"]
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "category": "fruit",
+    "image": "/images/orange.png",
+    "nutrients": {
+      "calories": 47,
+      "vitaminC": "53mg",
+      "fiber": "2.2g"
+    },
+    "benefits": [
+      "Boosts immunity",
+      "Rich in antioxidants"
+    ],
+    "canMixWith": ["apple", "guava"],
+    "notRecommendedWith": ["banana"]
+  }
+]

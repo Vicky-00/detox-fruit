@@ -1,12 +1,18 @@
+import fruits from "@/data/fruits.json";
+import FruitCard from "@/components/Fruitcard";
+
 export default function Home() {
   return (
-    <section className="text-center mt-20">
-      <h1 className="text-4xl font-bold mb-4">
-        Customize Your Healthy Drink
+    <section>
+      <h1 className="text-3xl font-bold mb-6">
+        Choose Your Fruits
       </h1>
-      <p className="text-gray-600">
-        Build fruit-infused water & juice with real nutrition info.
-      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {fruits.map((fruit) => (
+          <FruitCard key={fruit.id} fruit={fruit} />
+        ))}
+      </div>
     </section>
   );
 }
