@@ -1,36 +1,382 @@
 [
-  {
-    "id": "apple",
-    "name": "Apple",
-    "category": "fruit",
-    "image": "/images/apple.png",
-    "nutrients": {
-      "calories": 52,
-      "vitaminC": "5mg",
-      "fiber": "2.4g"
+    {
+        "id": "apple",
+        "name": "Apple",
+        "category": "fruit",
+        "image": "/images/apple.png",
+        "nutrients": {
+            "calories": 52,
+            "vitaminC": "5mg",
+            "fiber": "2.4g"
+        },
+        "benefits": [
+            "Improves digestion",
+            "Supports heart health",
+            "Stabilizes blood sugar"
+        ],
+        "canMixWith": [
+            "orange",
+            "guava",
+            "pomegranate",
+            "carrot",
+            "beetroot",
+            "pear",
+            "grapes"
+        ],
+        "notRecommendedWith": [
+            "banana"
+        ]
     },
-    "benefits": [
-      "Improves digestion",
-      "Supports heart health"
-    ],
-    "canMixWith": ["orange", "guava", "pomegranate"],
-    "notRecommendedWith": ["banana"]
-  },
-  {
-    "id": "orange",
-    "name": "Orange",
-    "category": "fruit",
-    "image": "/images/orange.png",
-    "nutrients": {
-      "calories": 47,
-      "vitaminC": "53mg",
-      "fiber": "2.2g"
+    {
+        "id": "orange",
+        "name": "Orange",
+        "category": "fruit",
+        "image": "/images/orange.png",
+        "nutrients": {
+            "calories": 47,
+            "vitaminC": "53mg",
+            "fiber": "2.4g"
+        },
+        "benefits": [
+            "Boosts immunity",
+            "Rich in antioxidants",
+            "Promotes skin health"
+        ],
+        "canMixWith": [
+            "apple",
+            "guava",
+            "pineapple",
+            "lemon",
+            "grapefruit",
+            "mango"
+        ],
+        "notRecommendedWith": [
+            "banana",
+            "milk"
+        ]
     },
-    "benefits": [
-      "Boosts immunity",
-      "Rich in antioxidants"
-    ],
-    "canMixWith": ["apple", "guava"],
-    "notRecommendedWith": ["banana"]
-  }
+    {
+        "id": "banana",
+        "name": "Banana",
+        "category": "fruit",
+        "image": "/images/banana.png",
+        "nutrients": {
+            "calories": 89,
+            "potassium": "358mg",
+            "vitaminB6": "0.4mg"
+        },
+        "benefits": [
+            "Provides instant energy",
+            "Supports muscle function",
+            "Aids digestion"
+        ],
+        "canMixWith": [
+            "strawberry",
+            "kiwi",
+            "blueberry",
+            "mango",
+            "papaya"
+        ],
+        "notRecommendedWith": [
+            "orange",
+            "lemon",
+            "guava"
+        ]
+    },
+    {
+        "id": "guava",
+        "name": "Guava",
+        "category": "fruit",
+        "image": "/images/guava.png",
+        "nutrients": {
+            "calories": 68,
+            "vitaminC": "228mg",
+            "fiber": "5.4g"
+        },
+        "benefits": [
+            "Immunity powerhouse",
+            "Lowers blood sugar",
+            "Heart healthy"
+        ],
+        "canMixWith": [
+            "apple",
+            "orange",
+            "pineapple",
+            "lemon"
+        ],
+        "notRecommendedWith": [
+            "banana"
+        ]
+    },
+    {
+        "id": "pomegranate",
+        "name": "Pomegranate",
+        "category": "fruit",
+        "image": "/images/pomegranate.png",
+        "nutrients": {
+            "calories": 83,
+            "vitaminK": "16mcg",
+            "fiber": "4g"
+        },
+        "benefits": [
+            "Anti-inflammatory",
+            "Lowers blood pressure",
+            "Rich in antioxidants"
+        ],
+        "canMixWith": [
+            "apple",
+            "watermelon",
+            "beetroot",
+            "grapes",
+            "blueberry"
+        ],
+        "notRecommendedWith": [
+            "milk"
+        ]
+    },
+    {
+        "id": "lemon",
+        "name": "Lemon",
+        "category": "fruit",
+        "image": "/images/lemon.png",
+        "nutrients": {
+            "calories": 29,
+            "vitaminC": "53mg",
+            "iron": "0.6mg"
+        },
+        "benefits": [
+            "Detoxifies body",
+            "Alkalizes pH",
+            "Aids weight loss"
+        ],
+        "canMixWith": [
+            "mint",
+            "cucumber",
+            "ginger",
+            "orange",
+            "apple"
+        ],
+        "notRecommendedWith": [
+            "milk",
+            "yogurt",
+            "tomato"
+        ]
+    },
+    {
+        "id": "watermelon",
+        "name": "Watermelon",
+        "category": "fruit",
+        "image": "/images/watermelon.png",
+        "nutrients": {
+            "calories": 30,
+            "water": "92%",
+            "vitaminA": "11% DV"
+        },
+        "benefits": [
+            "Hydration support",
+            "Reduces muscle soreness",
+            "Skin health"
+        ],
+        "canMixWith": [
+            "pomegranate",
+            "mint",
+            "lemon"
+        ],
+        "notRecommendedWith": [
+            "milk",
+            "banana",
+            "grains"
+        ]
+    },
+    {
+        "id": "pineapple",
+        "name": "Pineapple",
+        "category": "fruit",
+        "image": "/images/pineapple.png",
+        "nutrients": {
+            "calories": 50,
+            "manganese": "0.9mg",
+            "bromelain": "High"
+        },
+        "benefits": [
+            "Aids digestion",
+            "Reduces inflammation",
+            "Boosts immunity"
+        ],
+        "canMixWith": [
+            "mango",
+            "orange",
+            "guava",
+            "ginger",
+            "banana"
+        ],
+        "notRecommendedWith": [
+            "milk"
+        ]
+    },
+    {
+        "id": "papaya",
+        "name": "Papaya",
+        "category": "fruit",
+        "image": "/images/papaya.png",
+        "nutrients": {
+            "calories": 43,
+            "vitaminC": "62mg",
+            "folate": "37mcg"
+        },
+        "benefits": [
+            "Improves digestion",
+            "Protects against skin damage",
+            "Reduces inflammation"
+        ],
+        "canMixWith": [
+            "banana",
+            "mango",
+            "lemon",
+            "orange"
+        ],
+        "notRecommendedWith": [
+            "milk"
+        ]
+    },
+    {
+        "id": "kiwi",
+        "name": "Kiwi",
+        "category": "fruit",
+        "image": "/images/kiwi.png",
+        "nutrients": {
+            "calories": 61,
+            "vitaminC": "93mg",
+            "vitaminK": "40mcg"
+        },
+        "benefits": [
+            "Supports sleep",
+            "Heart health",
+            "High vitamin C"
+        ],
+        "canMixWith": [
+            "strawberry",
+            "banana",
+            "apple",
+            "orange"
+        ],
+        "notRecommendedWith": [
+            "milk"
+        ]
+    },
+    {
+        "id": "grapes",
+        "name": "Grapes",
+        "category": "fruit",
+        "image": "/images/grapes.png",
+        "nutrients": {
+            "calories": 69,
+            "vitaminK": "14mcg",
+            "resveratrol": "High"
+        },
+        "benefits": [
+            "Heart health",
+            "Eye health",
+            "Anti-aging"
+        ],
+        "canMixWith": [
+            "apple",
+            "pomegranate",
+            "kiwi"
+        ],
+        "notRecommendedWith": [
+            "melon"
+        ]
+    },
+    {
+        "id": "strawberry",
+        "name": "Strawberry",
+        "category": "fruit",
+        "image": "/images/strawberry.png",
+        "nutrients": {
+            "calories": 32,
+            "vitaminC": "59mg",
+            "manganese": "0.4mg"
+        },
+        "benefits": [
+            "Regulates blood sugar",
+            "Skin glow",
+            "Whitens teeth"
+        ],
+        "canMixWith": [
+            "banana",
+            "kiwi",
+            "blueberry",
+            "peach"
+        ],
+        "notRecommendedWith": []
+    },
+    {
+        "id": "mango",
+        "name": "Mango",
+        "category": "fruit",
+        "image": "/images/mango.png",
+        "nutrients": {
+            "calories": 60,
+            "vitaminA": "10% DV",
+            "folate": "18mcg"
+        },
+        "benefits": [
+            "Boosts immunity",
+            "Supports eye health",
+            "Improves digestive health"
+        ],
+        "canMixWith": [
+            "pineapple",
+            "banana",
+            "orange",
+            "papaya"
+        ],
+        "notRecommendedWith": []
+    },
+    {
+        "id": "pear",
+        "name": "Pear",
+        "category": "fruit",
+        "image": "/images/pear.png",
+        "nutrients": {
+            "calories": 57,
+            "fiber": "3.1g",
+            "potassium": "116mg"
+        },
+        "benefits": [
+            "High in fiber",
+            "Anti-inflammatory",
+            "Gut health"
+        ],
+        "canMixWith": [
+            "apple",
+            "banana",
+            "cinnamon"
+        ],
+        "notRecommendedWith": []
+    },
+    {
+        "id": "blueberry",
+        "name": "Blueberry",
+        "category": "fruit",
+        "image": "/images/blueberry.png",
+        "nutrients": {
+            "calories": 57,
+            "vitaminK": "19mcg",
+            "antioxidants": "Very High"
+        },
+        "benefits": [
+            "Brain superfood",
+            "Protects cholesterol",
+            "Lowers blood pressure"
+        ],
+        "canMixWith": [
+            "strawberry",
+            "banana",
+            "yogurt",
+            "oats"
+        ],
+        "notRecommendedWith": []
+    }
 ]
