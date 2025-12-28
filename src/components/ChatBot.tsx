@@ -27,6 +27,10 @@ export default function ChatBot() {
     <div className="fixed bottom-6 right-6 z-50">
       {open && (
         <div className="w-72 bg-white border rounded-xl shadow p-3 mb-2">
+            <div className="text-xs text-gray-500 mb-2">
+  Try asking: “Apple benefits”, “Can I mix apple banana?”
+</div>
+
           <div className="h-40 overflow-y-auto text-sm space-y-1">
             {messages.map((m, i) => (
               <div key={i}>{m}</div>

@@ -13,10 +13,21 @@ export const useBuilderStore = create<BuilderState>((set) => ({
   selectedFruits: [],
   setType: (type) => set({ type }),
   toggleFruit: (id) =>
-    set((state) => ({
-      selectedFruits: state.selectedFruits.includes(id)
-        ? state.selectedFruits.filter((f) => f !== id)
-        : [...state.selectedFruits, id],
-    })),
+  set((state) => {
+    const limit = state.type === "juice" ? 4 : 2;
+
+    if (state.selectedFruits.includes(id)) {
+      return {
+        selectedFruits: state.selectedFruits.filter((f) => f !== id),
+      };
+    }
+
+    if (state.selectedFruits.length >= limit) {
+      return state;
+    }
+
+    return { selectedFruits: [...state.selectedFruits, id] };
+  }),
+
   reset: () => set({ selectedFruits: [] }),
 }));
