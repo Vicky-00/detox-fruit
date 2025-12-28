@@ -11,8 +11,21 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Detox Juice & Water Builder",
-  description: "Create your perfect detox drink with fresh fruits.",
+  title: "Custom Detox Juice & Fruit Water Builder",
+  description:
+    "Build healthy detox juices and fruit-infused water with real nutrition benefits. Choose fruits based on skin, gut health, immunity, and hydration.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Custom Detox Juice & Fruit Water Builder",
+    description:
+      "Create personalized detox juices and fruit-infused water based on your health goals.",
+    url: "https://detox-fruit.vercel.app",
+    siteName: "Detox Juice Builder",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
